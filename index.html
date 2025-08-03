@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IMDb - Movie Database Clone</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <div class="header">
+        <div class="top-nav">
+            <div class="logo">IMDb</div>
+            <div class="search-bar">
+                    <input type="text" placeholder="Search movies and TV shows...">
+            </div>
+            <div class="top-nav">
+                <select name="lang">
+                    <option value="en">English</option>
+                    <option value="es">Spanish</option>
+                    <option value="fr">French</option>
+                    <option value="de">German</option>
+                    <option value="it">Italian</option>
+                    <option value="ja">Japanese</option>
+                </select>
+                <a href="#" class="nav-link">
+                    <i class="far fa-bookmark"></i>Watchlist
+                </a>
+                <div class="vl"></div>
+                <a href="#" class="nav-link">Sign In</a>
+                <button class="imdb-pro">Get IMDbPro</button>
+            </div>
+        </div>
+        <div class="bottom-nav">
+            <a href="#">Trending ▾</a>
+            <a href="#">TV Shows ▾</a>
+            <a href="#">Movies ▾</a>
+            <a href="#">Watch ▾</a>
+            <a href="#">Awards & Events ▾</a>
+            <a href="#">Celebs ▾</a>
+            <a href="#">Community ▾</a>
+        </div>
+    </div>
+    <div class="movie-container">
+        <div class="breadcrumb">
+            <a href="#">Movies</a> /
+            <a href="#">Drama</a> /
+            <span>The Shawshank Redemption</span>
+        </div>
+        <h1 class="movie-title">The Shawshank Redemption</h1>
+        <div class="movie-meta">
+          <span>1994</span> · <span>Drama</span> · <span>R</span> · <span>2h 22m</span>
+          <span class="rating-stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star-half-alt"></i>
+          </span>
+          <span class="score">4.25</span>
+          <span class="votes">2.7M votes</span>
+          <div class="action-buttons">
+            <button class="watchlist"><i class="far fa-bookmark"></i> Add to watchlist</.>
+            <button class="prime">Buy on Prime Video</button>
+         </div>
+        </div>
+    </div>
+<div class="movie-section">
+    <div class="trailer-column">
+      <div class="badge">Top rated movie #1</div>
+      <div class="trailer-embed">
+        <iframe 
+          src="https://www.youtube.com/embed/PLl99DlL6b4?si=A9U80OmOZWWmGhyr"
+          title="YouTube video player"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          referrerpolicy="strict-origin-when-cross-origin"
+          allowfullscreen>
+        </iframe>
+      </div>
+    </div>
+    <div class="banner">
+      <img src="https://iili.io/FrNrjUX.png" alt="Shawshank Poster" />
+    </div>
+    <div class="movie-poster-slider">
+      <img src="https://iili.io/FrSXhGt.png" alt="img1" tabindex="0" />
+      <img src="https://iili.io/FrSjNpf.png" alt="img" tabindex="0" />
+      <img src="https://iili.io/FrSezyg.png" alt="img" tabindex="0" />
+      <img src="https://iili.io/FrSUW4R.png" alt="img4" tabindex="0" />
+    </div>
+</div>
+<section class="about-movie">
+      <h3>About This Movie</h3>
+   <div class="movie-info">
+    <div class="row">
+      <div class="item">
+        <div class="label">Director</div>
+        <div class="value"><a href="#">Frank Darabont</a></div>
+      </div>
+      <div class="item">
+        <div class="label">Stars</div>
+        <div class="value">
+          <a href="#">Tim Robbins</a><br>
+          <a href="#">Morgan Freeman</a><br>
+          <a href="#">Bob Gunton</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="item">
+        <div class="label">Writers</div>
+        <div class="value">
+          <a href="#">Steven King</a><br>
+          <a href="#">Frank Darabont</a>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="item">
+        <div class="label">Awards</div>
+        <div class="value">
+          <a href="#">IMDb top rated movie #1</a><br>
+          <a href="#">Nominated for 7 Oscars</a><br>
+          <a href="#">Nominated for 1 screen actor’s guild award</a><br>
+          <a href="#">All awards…</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="storyline-cast">
+      <section class="storyline">
+    <h2>Storyline</h2>
+    <p class="description">
+      Chronicles the experiences of a formerly successful banker as a prisoner in the gloomy jailhouse of Shawshank after being found guilty of a crime he did not commit. The film portrays the man's unique way of dealing with his new, torturous life; along the way he befriends a number of fellow prisoners, most notably a wise long-term inmate named Red.
+    </p>
+    <div class="plot-links">
+      <a href="#">Full plot summary</a>
+      <a href="#">Full plot synopsis</a>
+    </div>
+    <div class="tags">
+      <span>prison</span>
+      <span>stephen king</span>
+      <span>prison escape</span>
+      <span>male friendship</span>
+      <span>voice over narration</span>
+      <span>1940s</span>
+      <span>371 more…</span>
+    </div>
+    <div class="meta">
+      <p><strong>Tagline</strong> Fear can hold you prisoner. Hope can set you free.</p>
+      <p><strong>Genre</strong> <a href="#">Drama</a></p>
+      <p><strong>Rating</strong> Rated R for language and prison violence</p>
+    </div>
+  </section>
+
+  <section class="cast">
+    <h2>Cast</h2>
+    <div class="cast-grid">
+      <div class="cast-card">
+        <div class="cast-img"><img src="https://iili.io/FrY8bcb.jpg" alt="Tim Robbins" /></div>
+        <div class="cast-info">
+          <div class="cast-name">Tim Robbins</div>
+          <div class="cast-role">Andy Dufresne</div>
+        </div>
+      </div>
+      <div class="cast-card">
+        <div class="cast-img"><img src="https://iili.io/FrY8bcb.jpg" alt="Morgan Freeman" /></div>
+        <div class="cast-info">
+          <div class="cast-name">Morgan Freeman</div>
+          <div class="cast-role">Ellis “Red” Redding</div>
+        </div>
+      </div>
+      <div class="cast-card">
+        <div class="cast-img"><img src="https://iili.io/FrY8bcb.jpg" alt="Bob Gunton" /></div>
+        <div class="cast-info">
+          <div class="cast-name">Bob Gunton</div>
+          <div class="cast-role">Warden Norton</div>
+        </div>
+      </div>
+      <div class="cast-card">
+        <div class="cast-img"><img src="https://iili.io/FrY8bcb.jpg" alt="William Sadler" /></div>
+        <div class="cast-info">
+          <div class="cast-name">William Sadler</div>
+          <div class="cast-role">Heywood</div>
+        </div>
+      </div>
+      <div class="cast-card">
+        <div class="cast-img"><img src="https://iili.io/FrY8bcb.jpg" alt="Clancy Brown" /></div>
+        <div class="cast-info">
+          <div class="cast-name">Clancy Brown</div>
+          <div class="cast-role">Captain Hadley</div>
+        </div>
+      </div>
+      <div class="cast-card">
+        <div class="cast-img"><img src="https://iili.io/FrY8bcb.jpg" alt="Gil Bellows" /></div>
+        <div class="cast-info">
+          <div class="cast-name">Gil Bellows</div>
+          <div class="cast-role">Tommy</div>
+        </div>
+      </div>
+      <div class="cast-card">
+        <div class="cast-img"><img src="https://iili.io/FrY8bcb.jpg" alt="Mark Rolston" /></div>
+        <div class="cast-info">
+          <div class="cast-name">Mark Rolston</div>
+          <div class="cast-role">Bogs Diamond</div>
+        </div>
+      </div>
+      <div class="cast-card">
+        <div class="cast-img"><img src="https://iili.io/FrY8bcb.jpg" alt="James Whitmore" /></div>
+        <div class="cast-info">
+          <div class="cast-name">James Whitmore</div>
+          <div class="cast-role">Brooks Hatlen</div>
+        </div>
+      </div>
+      <div class="cast-card">
+        <div class="cast-img"><img src="https://iili.io/FrY8bcb.jpg" alt="Jeffrey DeMunn" /></div>
+        <div class="cast-info">
+          <div class="cast-name">Jeffrey DeMunn</div>
+          <div class="cast-role">1946 D.A.</div>
+        </div>
+      </div>
+      <div class="cast-card">
+        <div class="cast-img"><img src="https://iili.io/FrY8bcb.jpg" alt="Larry Brandenburg" /></div>
+        <div class="cast-info">
+          <div class="cast-name">Larry Brandenburg</div>
+          <div class="cast-role">Skeet</div>
+        </div>
+      </div>
+    </div>
+    <button class="see-full-cast">See full cast</button>
+  </section>
+</section>
+<section class="review-trivia">
+  <div class="user-reviews">
+    <div class="section-header">
+      <h2>User reviews</h2>
+      <a href="#" class="add-review">+ Add a review</a>
+    </div>
+
+    <div class="review-card">
+      <div class="review-top">
+        <h3 class="review-title">Eternal Hope</h3>
+        <div class="rating">
+          <span class="star">⭐</span>
+          <span class="score">8.3</span>
+          <span class="out-of">/ 10</span>
+        </div>
+      </div>
+      <p class="review-text">
+        I've lost count of the number of times I have seen this movie, but it is more than 20. It has to be one of the best movies ever made. It made me take notice Morgan Freeman and Tim Robbins like I had never noticed any actors before.
+      </p>
+      <p class="review-text">
+        I have from a very young age been a huge fan of anything Stephen King writes and had already read the short story that this movie is based on years prior to seeing [...]
+      </p>
+      <a href="#" class="read-full">Read full review ▼</a>
+
+      <div class="review-footer">
+        <div class="author-info">
+          <div class="author-avatar">
+            <img src="picture.png">
+          </div>
+          <div>
+            <div class="author-name">shapiro</div>
+            <div class="review-date">Jun 14, 2018</div>
+          </div>
+        </div>
+        <div class="review-actions">
+          <span>👍 5000</span>
+          <span>👎 875</span>
+        </div>
+      </div>
+    </div>
+
+    <a href="#" class="read-more-reviews">Read 1,789 more reviews</a>
+  </div>
+  <div class="trivia">
+    <div class="trivia-card">
+      <h2>Trivia</h2>
+      <h3>Get access to trivia with IMDbPro</h3>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+      </p>
+      <a href="#" class="join-btn">Join for free now →</a>
+    </div>
+  </div>
+</section>
+<section class="more-movies">
+    <h2>More movie like this...</h2>
+        <div class="movie-list">
+            <div class="movie-name">
+                <img src="https://iili.io/Frl682S.png">
+                <div class="rating">
+                    <h3>Avengers&nbsp;&nbsp;</h3>
+                    <span class="star">⭐</span>
+                    <span class="score">8.3</span>
+                    <span class="out-of">/10</span>
+                </div>
+                <button class="trailer-btn">▶ Watch Trailer</button>
+                <button class="buy-btn">Buy on Amazon ▼</button>
+            </div>
+            <div class="movie-name">
+                <img src="https://iili.io/Frl682S.png">
+                <div class="rating">
+                    <h3>Fanstic Four &nbsp;&nbsp;</h3>
+                    <span class="star">⭐</span>
+                    <span class="score">8.3</span>
+                    <span class="out-of">/10</span>
+                </div>
+                <button class="trailer-btn">▶ Watch Trailer</button>
+                <button class="buy-btn">Buy on Amazon ▼</button>
+            </div>
+            <div class="movie-name">
+                <img src="https://iili.io/Frl682S.png">
+                <div class="rating">
+                    <h3>Thunderbolt &nbsp;&nbsp;</h3>
+                    <span class="star">⭐</span>
+                    <span class="score">8.3</span>
+                    <span class="out-of">/10</span>
+                </div>
+                <button class="trailer-btn">▶ Watch Trailer</button>
+                <button class="buy-btn">Buy on Amazon ▼</button>
+            </div>
+            <div class="movie-name">
+                <img src="https://iili.io/Frl682S.png">
+                <div class="rating">
+                    <h3>Spider Man&nbsp;&nbsp;</h3>
+                    <span class="star">⭐</span>
+                    <span class="score">8.3</span>
+                    <span class="out-of">/10</span>
+                </div>
+                <button class="trailer-btn">▶ Watch Trailer</button>
+                <button class="buy-btn">Buy on Amazon ▼</button>
+            </div>
+        </div>
+</section>
+</body>
+</html>
