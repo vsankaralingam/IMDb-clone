@@ -1,0 +1,660 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #fff;
+  
+}
+
+.header {
+  background-color: white;
+  background-color:#121212;
+  padding: 10px 80px;
+  border-bottom: 1px solid #333;
+  display: block;
+  justify-content: center;
+}
+
+.top-nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.logo {
+  background-color: #f5c518;
+  color: black;
+  font-weight: bold;
+  font-size: 24px;
+  padding: 5px 20px;
+  border-radius: 20px;
+}
+
+.search-bar input {
+  padding: 8px 12px;
+  border-radius: 20px;
+  border: none;
+  outline: none;
+  width: 300px;
+  background-color: #2c2c2c;
+  color: white;
+}
+
+.top-actions {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.lang {
+  padding:  5px 12px;
+  background-color: white;
+  color: #2c2c2c;
+  border: none;
+  font-size: 25px;
+  border-radius: 20px;
+
+}
+
+.nav-link {
+  color: white;
+  text-decoration: none;
+  font-size: 14px;
+}
+.vl{
+  border-left: 2px solid white;
+  height:16px;
+}
+
+.imdb-pro {
+  background-color: #f5c518;
+  color: black;
+  border: none;
+  padding: 8px 12px;
+  font-weight: bold;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.bottom-nav {
+  display: flex;
+  gap: 1.8rem;
+  margin-top: 10px;
+  padding: 0 10px;
+  font-size: 14px;
+  border-top: 1px solid #333;
+  padding-top: 35px;
+  padding-bottom: 15px;
+}
+
+.bottom-nav a {
+  color: white;
+  text-decoration: none;
+}
+.breadcrumb a {
+  color: #0071eb;
+  text-decoration: none;
+}
+
+.movie-container {
+  max-width: 1200px;
+  margin: 40px auto;
+  padding: 0 20px;
+  background: #fff;
+}
+
+.breadcrumb {
+  font-size: 0.9rem;
+  color: #666;
+  margin-bottom: 15px;
+}
+
+.breadcrumb span {
+  color: #000;
+}
+
+.movie-title {
+  font-size: 2.5rem;
+  margin: 10px 0;
+  color:#000;
+}
+
+.movie-meta {
+  color: #666;
+  font-size: 0.95rem;
+  margin-bottom: 20px;
+}
+
+.rating-stars i {
+  color: #f5c518;
+  margin-left: 6px;
+}
+
+.score {
+  font-weight: bold;
+  margin-left: 10px;
+}
+
+.votes {
+  margin-left: 8px;
+  color: #777;
+}
+
+.action-buttons {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding-bottom:75px;
+}
+
+.watchlist,
+.prime {
+  padding: 10px 16px;
+  font-size: 0.95rem;
+  border: none;
+  border-radius: 999px;
+  cursor: pointer;
+  margin-right: 10px;
+}
+
+.watchlist {
+  background:#e8e8e8;
+  color: #222;
+  padding: 10px 16px;
+  order:1;
+}
+
+.prime {
+  background: #f5c518;
+  color: #000;
+  order:2;
+}
+.movie-section {
+  display: flex;
+  gap: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+  flex-wrap: wrap;
+}
+
+
+.trailer-column {
+  flex: 2;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.trailer-embed {
+  max-width:1200px;
+  position: relative;
+  width: 100%;
+  padding-top: 56.25%; 
+  margin-bottom: 10px;
+}
+
+.trailer-embed iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+
+.trailer-text {
+  font-size: 15px;
+  line-height: 1.5;
+}
+
+.badge {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  background: gold;
+  color: #000;
+  padding: 6px 10px;
+  font-weight: bold;
+  border-radius: 4px;
+  z-index: 2;
+}
+
+
+.banner {
+  flex: 1;
+}
+
+.banner img {
+  width: 100%;
+  height:100%;
+  border-radius: 8px;
+}
+
+.movie-poster-slider {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  overflow-y: auto;
+  max-height: 500px;
+  padding-right: 8px;
+}
+
+.movie-poster-slider::-webkit-scrollbar {
+  width: 0;
+  background: transparent;
+}
+
+.movie-poster-slider img {
+  border-radius: 8px;
+  transition: transform 0.3s ease;
+  cursor: pointer;
+}
+
+.movie-poster-slider img:focus {
+  outline: 2px solid #f5c518;
+  transform: scale(1.05);
+}
+
+@media (max-width: 900px) {
+  .movie-section {
+    flex-direction: column;
+  }
+
+  .highlight-box {
+    height: auto;
+    max-height: 300px;
+  }
+}
+
+.about-movie {
+  background-color: #f5f5f5;
+  border-radius: 10px;
+  padding: 25px;
+  max-width: 1200px;
+  margin: auto;
+}
+.about-movie h3 {
+  font-size: 1rem;
+  font-weight: bold;
+  color: #000;
+  margin-bottom: 16px;
+  text-transform: uppercase;
+}
+
+.movie-info {
+  display: flex;
+  flex-direction: row;
+  gap: 24px;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+}
+
+.item {
+  flex: 1 1 45%;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  min-width: 300px;
+}
+
+.label {
+  font-weight: bold;
+  color: #000;
+}
+
+.value a {
+  color: #0073e6;
+  text-decoration: none;
+  font-size: 0.95rem;
+}
+.movie-details {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4rem;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.storyline, .cast {
+  flex: 1 1 45%;
+}
+
+h2 {
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+}
+
+.description {
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+.plot-links a {
+  margin-right: 1rem;
+  color: #0073e6;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 0.95rem;
+}
+
+.tags {
+  margin: 1rem 0;
+}
+
+.tags span {
+  display: inline-block;
+  background-color: #f0f0f0;
+  border-radius: 20px;
+  padding: 0.4rem 1rem;
+  margin: 0.3rem;
+  font-size: 0.85rem;
+}
+
+.meta p {
+  margin: 0.5rem 0;
+  font-size: 0.9rem;
+  line-height: 1.5;
+}
+
+.meta strong {
+  font-weight: bold;
+  margin-right: 0.3rem;
+}
+
+.cast-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.5rem 2rem;
+}
+
+.cast-card {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.cast-img img {
+  width: 48px;
+  height: 48px;
+  object-fit: cover;
+  border-radius: 50%;
+  background-color: #eee;
+}
+
+.cast-info .cast-name {
+  font-weight: bold;
+  font-size: 1rem;
+}
+
+.cast-info .cast-role {
+  font-size: 0.9rem;
+  color: #555;
+}
+
+.see-full-cast {
+  margin-top: 1.5rem;
+  padding: 0.5rem 1.2rem;
+  background-color: #e7f0ff;
+  border: none;
+  border-radius: 20px;
+  font-size: 0.9rem;
+  cursor: pointer;
+  color: #0073e6;
+}
+.review-trivia {
+  display: flex;
+  gap: 3rem;
+  flex-wrap: wrap;
+  margin-top: 4rem;
+}
+
+.user-reviews, .trivia {
+  flex: 1 1 45%;
+}
+
+.section-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1.5rem;
+}
+
+.section-header h2 {
+  font-size: 1.8rem;
+}
+
+.add-review {
+  color: #0073e6;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.review-card {
+  background-color: #f9f9f9;
+  border-radius: 12px;
+  padding: 1.5rem;
+  box-shadow: 0 0 0.5rem rgba(0,0,0,0.05);
+}
+
+.review-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.review-title {
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.rating {
+  font-weight: bold;
+  font-size: 1rem;
+  color: #222;
+}
+
+.star {
+  color: gold;
+}
+
+.review-text {
+  margin: 1rem 0;
+  line-height: 1.6;
+  font-size: 0.95rem;
+  color: #333;
+}
+
+.read-full {
+  display: inline-block;
+  margin-bottom: 1rem;
+  color: #0073e6;
+  font-weight: 500;
+  text-decoration: none;
+  font-size: 0.95rem;
+}
+
+.review-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-top: 1px solid #ddd;
+  padding-top: 1rem;
+  margin-top: 1rem;
+}
+
+.author-info {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+}
+
+.author-avatar {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background-color: #ccc;
+}
+
+.author-name {
+  font-weight: bold;
+  font-size: 0.95rem;
+}
+
+.review-date {
+  font-size: 0.85rem;
+  color: #666;
+}
+
+.review-actions span {
+  margin-left: 1rem;
+  font-size: 0.95rem;
+}
+
+.read-more-reviews {
+  display: inline-block;
+  margin-top: 1.5rem;
+  padding: 0.6rem 1.2rem;
+  background-color: #e7f0ff;
+  color: #0073e6;
+  border-radius: 20px;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.trivia-card {
+  background-color: #f9c700;
+  border-radius: 12px;
+  padding: 2rem;
+  color:#fff;
+  background-image: url('https://iili.io/Framvtt.png');
+  background-size: cover;
+  background-blend-mode: multiply;
+  margin-top: 6rem;
+  height: 23rem;;
+}
+
+.trivia-card h2 {
+  font-size: 2.5rem;
+  margin-bottom: 0.8rem;
+  font-weight: 800;
+  color: white;
+}
+
+.trivia-card h3 {
+  font-size: 1.9rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+  font-weight: 750;
+
+}
+
+.trivia-card p {
+  font-size: 1.5rem;
+  margin-bottom: 1.5rem;
+  line-height: 1.5;
+  font-weight: 800;
+}
+
+.join-btn {
+  display: inline-block;
+  padding: 0.6rem 1.2rem;
+  background-color: #000;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 20px;
+  font-weight: bold;
+}
+.more-movie{
+  font-family: sans-serif;
+  margin: auto;
+  max-width: 1200px;
+  padding:  40px 20x;
+}
+.more-movie h2{
+  font-size: 1.8rem;
+  margin-bottom: 30px;
+}
+.movie-list{
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.movie-card{
+  width: 260px;
+  background-color: #fff;
+  border-radius: 12px;
+  text-align:center;
+  padding:10px;
+}
+.movie-card img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.movie-card h3 {
+  font-size: 1.1rem;
+  margin: 10px 0 5px;
+}
+
+.rating {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 10px;
+  font-size: 0.9rem;
+}
+
+.rating .star {
+  color: gold;
+  margin-right: 4px;
+  font-size: 1.2rem;
+}
+
+.rating .scale {
+  color: #555;
+  margin-left: 2px;
+}
+
+.trailer-btn,
+.buy-btn {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  margin: 6px 0;
+  border: none;
+  border-radius: 50px;
+  font-size: 0.9rem;
+  cursor: pointer;
+}
+
+.trailer-btn {
+  background-color: #f0f0f0;
+  color: #333;
+  font-weight: 500;
+}
+
+.buy-btn {
+  background-color: #FFD700;
+  color: black;
+  font-weight: 500;
+}
+.movie-name img{
+  max-height: 500px;
+  max-width: 200px;
+  display: block;
+  margin: auto;
+  border-radius: 8px;
+}
+@media (max-width: 768px) {
+  .item {
+    flex: 1 1 100%;
+  }
+}
